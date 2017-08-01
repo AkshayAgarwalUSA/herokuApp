@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:3000')
+var socket = io.connect('https://rocky-bayou-47977.herokuapp.com/')
 
 var button = document.getElementById('button1');
 var input = document.getElementById('input1');
