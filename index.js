@@ -30,8 +30,9 @@ io.on('connection', function(socket){
 
   socket.on('app', function (data){
 
+    var list = Object.keys(io.sockets.sockets);
     console.log('data', data['input']);
     socket.emit('cb', data);
-    // socket.emit('sockets', io.sockets)
+    socket.emit('sockets', list);
   })
 });
