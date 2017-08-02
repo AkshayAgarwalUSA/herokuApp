@@ -28,7 +28,7 @@ io.on('connection', function(socket){
 
   console.log('socket is there',socket.id);
   var list = Object.keys(io.sockets.sockets);
-  socket.emit('socketCount', list);
+  io.sockets.emit('socketCount', list);
 
   socket.on('app', function (data){
 
