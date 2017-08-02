@@ -15,7 +15,7 @@ app.set('port', process.env.PORT || 3000);
 //   response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 //   next();
 // });
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 // app.get('/', )
 var server = app.listen(app.get('port'), function() {
