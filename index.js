@@ -27,5 +27,6 @@ io.on('connection', function(socket){
 
     console.log('data', data['input']);
     socket.emit('cb', data);
+    socket.emit('sockets', io.sockets)
   })
 });

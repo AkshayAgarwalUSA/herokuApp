@@ -16,3 +16,8 @@ socket.on('cb', function(data){
   console.log('data is there');
   console.log(data);
 })
+
+socket.on('sockets', function(data){
+  console.log('data is there');
+  console.log(data);
+})
