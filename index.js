@@ -27,7 +27,9 @@ var io = socket(server)
 io.on('connection', function(socket){
 
   console.log('socket is there',socket.id);
-
+  var list = Object.keys(io.sockets.sockets);
+  socket.emit('sockets', list);
+  
   socket.on('app', function (data){
 
     var list = Object.keys(io.sockets.sockets);
